@@ -2,7 +2,13 @@ apiVersion: backstage.io/v1alpha1
 kind: Resource # Or your custom PowerStore kind
 metadata:
   name: powerstore-iac # A unique, human-readable name
-  description: Main PowerStore appliance in the data center A
+  links:
+    - url: https://172.24.185.60 # Link to the PowerStore UI
+      title: PowerStore Manager UI
+      icon: dashboard
+  description: PowerStore appliance in the csc
+  annotations:
+    backstage.io/techdocs-ref: value
   tags:
     - storage
     - powerstore
@@ -18,8 +24,3 @@ spec:
   type: storage-array # A specific type for resources
   owner: group:default/storage-team # Define ownership
   system: system:default/infrastructure # Associate with a system
-  # Add any other relevant metadata specific to your PowerStore
-  powerStoreModel: PowerStore 5000T
-  #serialNumber: ABC-XYZ-123
-  #location: Data Center A
- 

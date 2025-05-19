@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: infrastructure
+  description: The core infrastructure system
+  # Add more metadata as needed
+spec:
+  owner: group:default/storage-team # Link to the group you just defined
+  domain: infrastructure-domain # If you have domains defined
+  # Add other system-specific properties

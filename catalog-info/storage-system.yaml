@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
-  name: infrastructure
+  name: storage
   description: The core infrastructure system
   # Add more metadata as needed
 spec:

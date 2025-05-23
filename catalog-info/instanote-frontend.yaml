@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: instanote-frontend
+  description: Frontend UI for the InstaNote application
+  tags:
+    - react
+    - app
+    - frontend
+spec:
+  type: service
+  lifecycle: experimental
+  owner: app-team
+  system: developer-environment
+  providesApis:
+    - instanote-api

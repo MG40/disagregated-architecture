@@ -6,5 +6,5 @@ metadata:
   # Add more metadata as needed
 spec:
   owner: group:default/storage-team # Link to the group you just defined
-  domain: infrastructure-domain # If you have domains defined
+  domain: storage-domain # If you have domains defined
   # Add other system-specific properties

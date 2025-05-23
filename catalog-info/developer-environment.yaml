@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: developer-environment
+  description: Developer environment for application build and initial testing
+spec:
+  domain: infrastructure
+  owner: devops-team

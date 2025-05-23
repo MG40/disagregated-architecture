@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: medium-dev-env
+  description: Medium-sized developer environment with 4 vCPU and 8GB RAM
+spec:
+  type: compute-resource
+  owner: platform-team
+  system: developer-environment

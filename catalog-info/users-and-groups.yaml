@@ -1,0 +1,103 @@
+# User: Developer
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: alex-developer
+spec:
+  profile:
+    displayName: Alex Developer
+    email: alex@example.com
+  memberOf: [team-dev]
+
+# User: SRE
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: sam-sre
+spec:
+  profile:
+    displayName: Sam SRE
+    email: sam@example.com
+  memberOf: [team-sre]
+
+# User: Administrator
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: nina-admin
+spec:
+  profile:
+    displayName: Nina Admin
+    email: nina@example.com
+  memberOf: [team-admin]
+
+# User: Data Scientist
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: tara-datascientist
+spec:
+  profile:
+    displayName: Tara Data Scientist
+    email: tara@example.com
+  memberOf: [team-datasci]
+
+# Group: Developers
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-dev
+spec:
+  type: team
+  profile:
+    displayName: Developer Team
+    email: devteam@example.com
+  children: []
+  members: [alex-developer]
+
+# Group: SREs
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-sre
+spec:
+  type: team
+  profile:
+    displayName: SRE Team
+    email: sreteam@example.com
+  children: []
+  members: [sam-sre]
+
+# Group: Admins
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-admin
+spec:
+  type: team
+  profile:
+    displayName: Admin Team
+    email: adminteam@example.com
+  children: []
+  members: [nina-admin]
+
+# Group: Data Scientists
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-datasci
+spec:
+  type: team
+  profile:
+    displayName: Data Science Team
+    email: datasci@example.com
+  children: []
+  members: [tara-datascientist]

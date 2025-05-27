@@ -1,0 +1,78 @@
+# Domain: Infrastructure
+---
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: infrastructure
+  description: Core infrastructure and platforms
+spec:
+  owner: team-admin
+
+# System: VMware Cluster
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: vmware-cluster
+  description: vSphere-managed virtual machines and hypervisor infrastructure
+spec:
+  owner: team-admin
+  domain: infrastructure
+
+# System: Kubernetes Platform
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: k8s-platform
+  description: Developer Kubernetes platform for containerized workloads
+spec:
+  owner: team-sre
+  domain: infrastructure
+
+# System: AI Workbench
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: ai-workbench
+  description: GPU-enabled infrastructure for Jupyter and ML workloads
+spec:
+  owner: team-datasci
+  domain: infrastructure
+
+# Resource: PowerFlex Storage Pool
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: powerflex-storage
+  description: High-performance storage backing K8s and VMs
+spec:
+  owner: team-admin
+  type: storage
+  system: k8s-platform
+
+# Resource: OpenShift Cluster
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: openshift-dev
+  description: Developer cluster on OpenShift 4.x
+spec:
+  owner: team-sre
+  type: cluster
+  system: k8s-platform
+
+# Resource: GPU Node Pool
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: gpu-node-pool
+  description: GPU-enabled nodes for AI workloads
+spec:
+  owner: team-datasci
+  type: nodepool
+  system: ai-workbench

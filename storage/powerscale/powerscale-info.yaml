@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource # Or your custom PowerStore kind
+metadata:
+  name: powerscale-iac # A unique, human-readable name
+  description: PowerScale appliance in the csc
+  annotations:
+    backstage.io/techdocs-ref: value
+  tags:
+    - storage
+    - powerscale
+    - csc
+  links:
+    - url: https://200-1.isilon.com:8080 # Link to the PowerStore UI
+      title: PowerScalee Manager UI
+      icon: dashboard
+spec:
+  type: Powerscale # A specific type for resources
+  owner: group:default/storage-team # Define ownership
+  system: system:default/infrastructure # Associate with a system

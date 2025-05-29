@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: infranest 
+  description: unifying code and infra - Materialising vision
+  links:
+    - title: Website
+      url: http://infranest:3000/
+    - title: Documentation
+      url: http://infranest:3000/docs
+    - title: Storybook
+      url: https://miro.com/app/board/uXjVIupgdfU=/?share_link_id=462420858590
+    - title: Teams Chat
+      url: https://teams.microsoft.com/l/channel/19%3Ae741f7d241bb4e0eacfbc649d05a5118%40thread.tacv2/General?groupId=4dd88ee1-4763-445f-9c47-26cf29b35214&tenantId=945c199a-83a2-4e80-9f8c-5a91be5752dd
+  annotations:
+    github.com/project-slug: backstage/backstage
+    backstage.io/techdocs-ref: dir:.
+    lighthouse.com/website-url: https://backstage.io
+spec:
+  type: library
+  owner: MG
+  lifecycle: production

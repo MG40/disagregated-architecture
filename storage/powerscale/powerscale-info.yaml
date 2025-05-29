@@ -10,7 +10,7 @@ metadata:
     - powerscale
     - csc
   links:
-    - url: https://200-1.isilon.com:8080 # Link to the PowerStore UI
+    - url: https://f200-1.isilon.com:8080 # Link to the PowerStore UI
       title: PowerScale Manager UI
       icon: dashboard
 spec:

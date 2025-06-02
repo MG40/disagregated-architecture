@@ -1,0 +1,10 @@
+# devops-pipeline-system.yaml
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: ci-cd-pipeline-system
+  description: Centralized system for managing all CI/CD pipelines.
+spec:
+  owner: doug # <-- IMPORTANT: This links it to Doug
+  domain: platform-engineering
+  # Add other relevant system details

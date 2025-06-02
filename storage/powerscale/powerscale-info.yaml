@@ -1,4 +1,3 @@
-# Path: disagregated-architecture/storage/powerscale/powerscale-info.yaml
 apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
@@ -11,10 +10,10 @@ metadata:
     - powerscale
     - csc
   links:
-    - url: https://f900-1.uds.sg.csc:8080 # Link to the PowerScale UI
+    - url: https://f900-1.uds.sg.csc:8080 # Replace with your actual PowerScale UI URL
       title: PowerScale Manager UI
       icon: dashboard
 spec:
   type: Powerscale
-  owner: group:default/storage-team # <--- Owned by the group
-  system: system:default/infrastructure
+  owner: group:default/storage-team # Owned by the Storage Team
+  system: infrastructure-system

@@ -1,19 +1,20 @@
+# storage/powerscale/powerscale-info.yaml
 apiVersion: backstage.io/v1alpha1
-kind: Resource # Or your custom PowerStore kind
+kind: Resource
 metadata:
-  name: powerscale-iac # A unique, human-readable name
+  name: powerscale-iac
   description: PowerScale appliance in the csc
   annotations:
-    backstage.io/techdocs-ref: value
+    backstage.io/techdocs-ref: url:https://github.com/MG40/disagregated-architecture/tree/main/storage/powerscale
   tags:
     - storage
     - powerscale
     - csc
   links:
-    - url: https://f900-1.uds.sg.csc:8080 # Link to the PowerStore UI
+    - url: https://f900-1.uds.sg.csc:8080 # Your PowerScale UI URL
       title: PowerScale Manager UI
       icon: dashboard
 spec:
-  type: Powerscale # A specific type for resources
-  owner: group:default/storage-team # Define ownership
-  system: system:default/infrastructure # Associate with a system
+  type: Powerscale
+  owner: group:default/storage-team # <--- ASSIGN TO THE GROUP
+  system: system:default/infrastructure

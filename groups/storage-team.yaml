@@ -2,11 +2,11 @@ apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
   name: storage-team
-  description: The team responsible for storage infrastructure
-  # You can add more metadata like title, links, etc.
+  description: The team responsible for managing storage infrastructure.
 spec:
-  type: team # Or another appropriate type
+  type: team
   profile:
     displayName: Storage Team
-    # Add contact info, etc.
-  children: [] # List of users or subgroups that belong to this team
+    email: storage-team@example.com
+  members:
+    - bob # Bob is a member of this team

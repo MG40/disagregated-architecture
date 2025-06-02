@@ -1,3 +1,4 @@
+# Path: disagregated-architecture/catalog-entities/dell-ecs-storage.yaml
 apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
@@ -5,7 +6,11 @@ metadata:
   description: Dell ECS Object Storage for application data.
   annotations:
     provider.com/type: Dell-ECS
+  links: # Example: Link to ECS management UI
+    - url: https://your-ecs-manager.example.com
+      title: ECS Manager UI
+      icon: dashboard
 spec:
   type: object-storage
-  owner: bob # <-- IMPORTANT: This links it to Bob
-  system: core-infrastructure
+  owner: group:default/storage-team # <--- Changed to group ownership
+  system: system:default/infrastructure

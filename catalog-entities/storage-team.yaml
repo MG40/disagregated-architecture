@@ -1,0 +1,12 @@
+# groups/storage-team.yaml
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: storage-team
+  description: The team responsible for managing all storage infrastructure.
+spec:
+  type: team
+  profile:
+    displayName: Storage Team
+  children: [] # You can list individual users who belong to this group here later
+  members: ['bob'] # <--- IMPORTANT: Add 'bob' as a member of this team.

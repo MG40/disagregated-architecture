@@ -1,0 +1,11 @@
+# customer-data-mart.yaml
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: customer-data-mart
+  description: Aggregated customer data for analytics and ML.
+spec:
+  type: dataset
+  owner: jack # <-- IMPORTANT: This links it to Jack
+  system: data-analytics
+  # Add other relevant dataset details

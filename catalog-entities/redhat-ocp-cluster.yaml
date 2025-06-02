@@ -1,0 +1,13 @@
+# dell-compute-cluster.yaml
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: prod-compute-cluster-01
+  description: Primary Dell Compute Cluster for production workloads.
+  annotations:
+    provider.com/type: Dell-PowerEdge
+spec:
+  type: compute-cluster
+  owner: bob # <-- IMPORTANT: This links it to Bob
+  system: core-infrastructure
+  # Add other relevant resource details

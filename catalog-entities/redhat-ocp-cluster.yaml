@@ -1,4 +1,4 @@
-# dell-compute-cluster.yaml
+# Path: disagregated-architecture/catalog-entities/dell-compute-cluster.yaml
 apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
@@ -6,8 +6,11 @@ metadata:
   description: Primary Dell Compute Cluster for production workloads.
   annotations:
     provider.com/type: Dell-PowerEdge
+  links: # Example: Link to a monitoring dashboard for compute
+    - url: https://your-compute-dashboard.example.com
+      title: Compute Dashboard
+      icon: dashboard
 spec:
   type: compute-cluster
-  owner: bob # <-- IMPORTANT: This links it to Bob
-  system: core-infrastructure
-  # Add other relevant resource details
+  owner: group:default/storage-team # <--- Changed to group ownership
+  system: system:default/infrastructure

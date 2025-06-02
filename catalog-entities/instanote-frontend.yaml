@@ -1,0 +1,14 @@
+# instanote-frontend.yaml
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: instanote-frontend
+  description: The user interface for the Instanote application.
+  annotations:
+    github.com/project-slug: MG40/instanote # Link to the GitHub repo if applicable
+spec:
+  type: service
+  lifecycle: production
+  owner: alice # <-- IMPORTANT: This links it to Alice
+  system: instanote
+  # Add other fields like 'dependsOn', 'providesApi' if relevant

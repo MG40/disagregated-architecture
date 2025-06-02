@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: prod-ecs-storage-01
+  description: Dell ECS Object Storage for application data.
+  annotations:
+    provider.com/type: Dell-ECS
+spec:
+  type: object-storage
+  owner: bob # <-- IMPORTANT: This links it to Bob
+  system: core-infrastructure

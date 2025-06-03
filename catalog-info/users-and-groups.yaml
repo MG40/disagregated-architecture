@@ -3,11 +3,11 @@
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: alex-developer
+  name: alice-dev
 spec:
   profile:
-    displayName: Alex Developer
-    email: alex@example.com
+    displayName: Alice Developer
+    email: alice@example.com
   memberOf: [team-dev]
 
 # User: SRE
@@ -15,23 +15,23 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: sam-sre
+  name: doug-platform
 spec:
   profile:
-    displayName: Sam SRE
-    email: sam@example.com
-  memberOf: [team-sre]
+    displayName: Doug Platform
+    email: doug@example.com
+  memberOf: [team-pe]
 
 # User: Administrator
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: nina-admin
+  name: bob-admin
 spec:
   profile:
-    displayName: Nina Admin
-    email: nina@example.com
+    displayName: Bob Admin
+    email: bob@example.com
   memberOf: [team-admin]
 
 # User: Data Scientist
@@ -39,11 +39,11 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: tara-datascientist
+  name: jack-datascientist
 spec:
   profile:
-    displayName: Tara Data Scientist
-    email: tara@example.com
+    displayName: Jack Data Scientist
+    email: jack@example.com
   memberOf: [team-datasci]
 
 # Group: Developers
@@ -58,19 +58,19 @@ spec:
     displayName: Developer Team
     email: devteam@example.com
   children: []
-  members: [alex-developer]
+  members: [alice-developer]
 
-# Group: SREs
+# Group: PEs
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
-  name: team-sre
+  name: team-pe
 spec:
   type: team
   profile:
-    displayName: SRE Team
-    email: sreteam@example.com
+    displayName: PE Team
+    email: peteam@example.com
   children: []
   members: [sam-sre]
 
@@ -86,7 +86,7 @@ spec:
     displayName: Admin Team
     email: adminteam@example.com
   children: []
-  members: [nina-admin]
+  members: [bob-admin]
 
 # Group: Data Scientists
 ---
@@ -100,4 +100,4 @@ spec:
     displayName: Data Science Team
     email: datasci@example.com
   children: []
-  members: [tara-datascientist]
+  members: [jack-datascientist]

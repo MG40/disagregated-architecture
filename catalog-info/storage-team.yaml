@@ -9,4 +9,4 @@ spec:
   profile:
     displayName: Storage Team
     # Add contact info, etc.
-  children: [] # List of users or subgroups that belong to this team
+  children: [bob] # List of users or subgroups that belong to this team
